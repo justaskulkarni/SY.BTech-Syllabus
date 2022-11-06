@@ -173,7 +173,7 @@ color:white;
         <li>Gauss Jordon Method</li>
         <li>Crout's Method (LU Decomposition)</li>
         <li>Gauss Jacobi Method (4 Iterations Only, Answers rounded off to 4 decimal)</li>
-        <li>Gauss Seidal Method (4 Iterations Only, Answers rounded off to 4 decimal)</li>
+        <li>Gauss Seidel Method (4 Iterations Only, Answers rounded off to 4 decimal)</li>
     </ul>
     </div>
     <div class="card">
