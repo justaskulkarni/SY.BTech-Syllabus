@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel = "Shortcut icon" href = "icons8-syllabus-100.png">
 <style>
 * {
   box-sizing: border-box;
@@ -49,13 +50,13 @@ body {
 /* Left column */
 .leftcolumn {   
   float: left;
-  width: 75%;
+  width: 68%;
 }
 
 /* Right column */
 .rightcolumn {
   float: left;
-  width: 25%;
+  width: 32%;
   background-color: #f1f1f1;
   padding-left: 20px;
 }
@@ -99,24 +100,54 @@ body {
  } 
 
 .containerBox {
-width:300px;
+width:450px;
 height:60px;
 padding:1px;
 background-color:#303030;
 }
 h4{
 margin:0px;
-margin-top:3%;
+margin-top:3%;    
 margin-left:50px;
 color:white;
 }
+.imageColumn {
+   float: left;  
+   width: 25%;
+   padding: 10px;
+}
 
+#ttdetails {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#ttdetails td, #ttdetails th {
+  border: 1px solid #ddd;
+  padding: 3px;
+}
+
+#ttdetails tr:nth-child(even){background-color: #f2f2f2;}
+
+#ttdetails tr:hover {background-color: #ddd;}
+
+#ttdetails th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
 /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
     padding: 0;
   }
+}
+tr{
+  font-size: 1.4rem;
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -337,21 +368,78 @@ color:white;
     </div>
   
     <div class="card">
-        <h3>Contact Me</h3>
-        <div class="fakeimg">
-          <img src = "https://cdn-icons-png.flaticon.com/512/174/174857.png" width = 100% height = 150px>    
+        <h1>Contact Me</h1>
+        <div class="fakeimg imageColumn">
+          
+          <img src = "icons8-linkedin-80.png" height= 50px>
+          
         </div>
-        <div class = "fakeimg">
-          <img src = "https://mailmeteor.com/logos/assets/PNG/Gmail_Logo_256px.png" width = 100% height = 150px>
+        <div class = "fakeimg imageColumn" >
+          
+          <img src = "icons8-gmail-logo-50.png" height= 50px>
+          
         </div>
-        <div class = "fakeimg">
-          <img src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" width = 100% height = 150px>
+        <div class = "fakeimg imageColumn">
+          
+          <img src = "icons8-github-squared-100.png" height= 50px>
+          
         </div>
-        <div class = "fakeimg">
-          <img src = "data:image/jpeg;base64,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" width = 100% height = 150px>
+        <div class = "fakeimg imageColumn">
+          
+          <img src = "icons8-whatsapp-50.png" height= 50px>
+          
         </div>
-    </div>
+    
+        </div>
+        <div class="card">
+          <h1>Timetable</h1>
+          <table id = "ttdetails">
+            <tr>
+              <th>Date</th>
+              <th>Subject</th>
+              <th>Credits</th>
+              <th>Time</th>
+            </tr>
+            <tr>
+              <td>31/10/2022</td>
+              <td>Linear Algebra</td>
+              <td>4</td>
+              <td>2:00pm - 3:30pm</td>
+            </tr>
+            <tr>
+              <td>1/11/2022</td>
+              <td>Discrete Mathematics</td>
+              <td>4</td>
+              <td>2:00pm - 3:30pm</td>
+            </tr>
+            <tr>
+              <td>2/11/2022</td>
+              <td>Fundamentals of Data Structures</td>
+              <td>3</td>
+              <td>2:00pm - 3:30pm</td>
+            </tr>
+            <tr>
+              <td>3/11/2022</td>
+              <td>Digital Systems & Logic Design</td>
+              <td>3</td>
+              <td>2:00pm - 3:30pm</td>
+            </tr>
+            <tr>
+              <td>4/11/2022</td>
+              <td>Computer Organisation & Architecture</td>
+              <td>3</td>
+              <td>2:00pm - 3:30pm</td>
+            </tr>
+            <tr>
+              <td>5/11/2022</td>
+              <td>Development Engineering</td>
+              <td>P/NP</td>
+              <td>2:00pm - 3:30pm</td>
+            </tr>
+          </table>
+        </div>
   </div>
+  
 </div>
 
 <div class="footer">
@@ -360,3 +448,4 @@ color:white;
 
 </body>
 </html>
+
